@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/boder_den"
+    >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- Hiển thị ID -->
+        <TextView
+            android:id="@+id/tvLoaiChiId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30sp"
+            android:text="1"
+            android:textColor="#FF000000"
+            android:textSize="16sp" />
+
+        <!-- Hiển thị Tên -->
+        <TextView
+            android:id="@+id/tvLoaiChiName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên loại chi"
+            android:textColor="#FF000000"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Layout chứa các nút Edit và Delete nằm bên phải -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <ImageButton
+            android:id="@+id/btn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/edit"
+            android:contentDescription="Edit"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <ImageButton
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/delete"
+            android:contentDescription="Delete"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+</LinearLayout>

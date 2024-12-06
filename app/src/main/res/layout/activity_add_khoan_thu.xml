@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <!-- Header title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:text="THÊM KHOẢN THU"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <!-- Name of Income -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:text="Tên khoản thu"
+            android:textColor="#090909"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/boder"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etTenKhoanChi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:hint="Nhập Khoản Thu"
+                android:inputType="text"
+                android:textColor="#090909"
+                android:textColorHint="#090909" />
+        </LinearLayout>
+
+        <!-- Income Type -->
+        <LinearLayout
+            android:layout_width="258dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingRight="30sp"
+                android:paddingBottom="4dp"
+                android:text="Loại Thu"
+                android:textColor="#090909"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spLoaiThu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp" />
+        </LinearLayout>
+
+
+
+        <!-- Date of Income -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:text="Ngày Thu"
+            android:textColor="#090909"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etNgayChi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boder"
+            android:hint="Nhập ngày Thu"
+            android:inputType="date"
+            android:padding="12dp"
+            android:textColor="#090909"
+            android:textColorHint="#090909" />
+
+        <!-- Amount of Money -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:text="Số tiền"
+            android:textColor="#090909"
+            android:textColorHint="#090909"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etTien_chi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boder"
+            android:hint="Nhập số tiền"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:textColor="#090909"
+            android:textColorHint="#090909" />
+
+
+
+        <!-- Notes -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:text="Ghi chú"
+            android:textColor="#090909"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etGhiChu_chi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boder"
+            android:hint="Nhập ghi chú"
+            android:padding="12dp"
+            android:textColor="#090909"
+            android:textColorHint="#090909" />
+
+        <Button
+            android:id="@+id/btnSaveLoathu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:text="Thêm Khoản Thu" />
+
+        <Button
+            android:id="@+id/btnCancelLoathu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hủy" />
+    </LinearLayout>
+
+</LinearLayout>

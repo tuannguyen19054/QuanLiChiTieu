@@ -1,0 +1,26 @@
+<!-- res/menu/drawer_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_khoanthu"
+            android:icon="@drawable/khoanthu"
+            android:title="Khoản Thu" />
+        <item
+            android:id="@+id/nav_khoanchi"
+            android:icon="@drawable/bit"
+            android:title="Khoản Chi" />
+        <item
+            android:id="@+id/nav_thongke"
+            android:icon="@drawable/thongke"
+            android:title="Thống Kê" />
+    </group>
+
+    <item android:title="Tài Khoản">
+        <menu>
+            <item
+                android:id="@+id/nav_thoat"
+                android:icon="@drawable/logout"
+                android:title="Thoát" />
+        </menu>
+    </item>
+</menu>

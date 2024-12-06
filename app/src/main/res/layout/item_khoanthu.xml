@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/boder_den"
+    android:layout_margin="8dp">
+
+    <!-- Phần đầu: Ngày -->
+    <TextView
+        android:id="@+id/tvNgayKhoanThu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày: 2022-11-26"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <!-- Phần nội dung -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="4dp">
+
+        <!-- Nội dung khoản thu -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTenKhoanThu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bán xe máy"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tvSoTienKhoanThu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+900,000.0$"
+                android:textColor="#4CAF50"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Icon sửa -->
+        <ImageButton
+            android:id="@+id/btnEditKhoanThu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/edit"
+            android:contentDescription="Edit"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp" />
+
+        <!-- Icon xóa -->
+        <ImageButton
+            android:id="@+id/btnDeleteKhoanThu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/delete"
+            android:contentDescription="Delete"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- Ghi chú -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+       >
+
+        <TextView
+            android:id="@+id/tvGhiChuKhoanThu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngân"
+            android:textSize="14sp"
+            android:textColor="#757575" />
+
+
+    </LinearLayout>
+</LinearLayout>

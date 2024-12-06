@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/boder"
+
+ >
+
+    <TextView
+        android:id="@+id/tvNgayThu"
+        android:text="Ngày:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvTenKhoanThu"
+        android:text="Tên khoản thu:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvSoTien"
+        android:text="Tiền:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
